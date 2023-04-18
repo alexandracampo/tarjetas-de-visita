@@ -1,0 +1,74 @@
+.dropdown {
+    padding: 20px 20px 30px 20px;
+    background: linear-gradient(to bottom, $color__bg--light, $color__white-two 9%);
+    width: 100%;
+    &__header {
+        display: flex;
+        align-items: baseline;
+        padding-top: 10px;
+        width: 100%;
+        position: relative;
+        cursor: pointer;
+    }
+    &__fieldset {
+        border: none;
+        border-bottom: 1px solid $color__footer__bg;
+        width: 100%;
+    } 
+    &__title {
+        font-size: 1.8rem;
+        color: $color__text;
+        font-family: $font__text;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-bottom: 25px;
+        margin-left: 10px;
+    }
+    &__arrow {
+        color: $color__text;
+        display: inline-block;
+        position: absolute;
+        right: 0;
+    }
+}
+.dropdown__icon {
+    font-size: 2rem;
+    color: $color__brand1;
+}
+
+@media  (min-width: 768px){
+    .ui_main{
+        display: grid;
+        padding:2rem;
+        grid-template-columns: 330px 1fr;
+        grid-template-rows: 1;
+        background: linear-gradient(to bottom, $color__bg--light, $color__white-two 9%);
+    }
+
+    .preview{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .dropdown {
+        background: none;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        height: 81rem; 
+      
+    }
+
+  @media (min-width: $breakpoint-desktop) {
+      .dropdown {
+          grid-column: 1/2;
+          grid-row: 1/2;
+      }
+    }
+  }
+
+  .collapsed {
+    display: none;
+  }
+
+  .arrow-collapsed {
+      transform: rotate(180deg);
+  }

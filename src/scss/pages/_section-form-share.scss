@@ -1,0 +1,74 @@
+html{
+    font-size: 62.5%;
+}
+
+
+.form_share__container{
+        display:flex;
+        justify-content: center;
+
+        &--btn{
+            width: 20rem;
+            height: 5rem;
+            font-family: $font__text; 
+            font-weight: 600;
+            font-size: 1.8rem;
+            border-radius:1.2rem;
+            box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
+            background-color: $color__brand1;
+            color:white;
+            border: 0;
+            text-transform: uppercase;
+            margin: 0rem auto 3rem;
+            cursor: pointer;
+
+    }
+}
+
+.checked {
+    color: white;
+    background-color: #d5d5d5;
+}
+
+.icono{
+    margin-right: 0.75rem;
+    font-size: 2.2rem;
+    color: white;
+}
+
+.share_card{
+    border-top: 1px solid $color__dividers;
+    padding:2rem 0;
+    font-family: $font__text;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+
+    &_text{
+        color: $color__text;
+        font-size: 1.8rem;
+        
+    }
+
+    &_cardURL {
+            font-size: 1.2rem;
+            color: $--tomato;
+            text-decoration: none;
+        }
+
+    &_twitter-share-button{
+        background-color: #00a0f5;
+        color:white;
+        text-decoration: none;
+        width: fit-content;
+        padding: 0.8rem;
+        font-size: 1.4rem;
+        border-radius: 5px;
+        box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
+
+    }
+}
+
+
+

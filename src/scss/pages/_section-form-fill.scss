@@ -1,0 +1,65 @@
+
+.section__fill {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	border: none;
+		&--label {
+		color: $color__brand2;
+		font-size: 1.4rem;
+		line-height: 20px;
+		font-family: $font__text;
+		margin-bottom: 7px;
+		}
+		&--input {
+		border: 1px solid $color__brand3;
+		height: 30px;
+		font-family: $font__text;
+		margin-bottom: 20px;
+		padding-left: 9px;
+		}
+		&--img {
+			display: flex;
+			flex-direction: row;
+		}
+		&--button {
+		width: 140px;
+		height: 30px;
+		margin-bottom: 20px;
+		font-family: $font__text;
+		font-size: 1.4rem;
+		background-color: $color__brand1;
+		color: $color__white-two;
+		border: none;
+		border-radius: 3px;
+		box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		cursor: pointer;
+		}
+		&--square {
+			width: 30px;
+			height: 30px;
+			border: 1px solid $color__brand3;
+			margin-left: 20px;
+			background-size: cover;
+		}
+}
+
+::placeholder {
+	color: #c5c5c5;
+	font-size: 1.4rem;
+}
+.form__photoinput {
+	display: none;
+}
+
+
+.error {
+	color: red;
+	font-size: 1.3rem;
+	font-family: $font__text;
+	margin-bottom: 2.2rem;
+	margin-top: -1.4rem;
+}

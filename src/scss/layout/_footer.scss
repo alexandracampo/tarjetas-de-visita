@@ -1,0 +1,37 @@
+.footer {
+    background-color: #ffffff;
+    border: solid 1px $color__dividers;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+     height: 15vh;   
+    
+    @media (min-width: $breakpoint-tablet) {
+        height: 6vh; 
+        flex-direction: row;
+        justify-content:space-between;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+        @media (min-width:$breakpoint-desktop) {
+            height: 6vh;
+        }
+
+
+    &__copy {
+        font-family: $font__text, sans-serif;
+        color: #6b6b6b;
+        line-height: 1.43;
+        font-size: 14px;
+        opacity: 0.5;
+    }
+
+    &__image {
+        width: 103px;
+        height: 40px;
+    }
+}
+

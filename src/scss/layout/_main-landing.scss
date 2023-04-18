@@ -1,0 +1,102 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #f5f5f5;
+    height: 45vh;  
+
+    @media (min-width: $breakpoint-tablet) {
+        padding-bottom: 8rem; 
+    }
+
+    &--title {
+        font-family: $font__heading;
+        font-size: 1.9rem;
+        font-weight: bold;
+        color: $color__brand1;
+        margin: 0 3rem 0 3rem;
+
+        @media all and (min-width:$breakpoint-tablet) {
+            font-size: 2.4rem;
+        }
+    }
+
+    &--item {
+        font-family: $font__text;
+        font-size: 1.3rem;
+        color: $color__brand2;
+        margin: 0 3rem 2rem 3rem;
+
+        @media all and (min-width:$breakpoint-tablet) {
+            font-size: 1.6rem;
+            margin: 0 25rem 3rem 25rem;
+            color: $color__brand2;
+            width: 331px;
+        }
+    }
+
+    &--list {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border: solid 1px rgba(225, 115, 52,0.3);
+        border-radius: 0.5rem;
+        padding: 1.5rem 2rem 1.5rem 2rem;
+        margin: 0 auto 2rem auto;
+        font-size: 1.2rem;
+        color: $color__text;
+        font-family: $font__text;
+        max-width: 268px;
+        gap: 45px;
+
+        @media all and (min-width:$breakpoint-tablet) {
+            margin: 0 22.5rem 0rem 22.5rem; 
+            align-self: center;
+        }
+
+        &_item {
+            display: flex;
+            flex-direction: column-reverse;
+            }
+    }
+
+    &--button {
+        font-size: 1.6rem;
+        background-color: $--dirty-blue;
+        margin: 2rem auto 3rem auto; 
+        padding: 1rem 0;
+        border: 1rem;
+        border-radius: 5rem;
+        width: 129px;
+
+        @media all and (min-width:$breakpoint-tablet) {
+            margin: 10rem 32rem 0rem 32rem;
+            width: 150px;
+            align-self: center;
+        }
+        @media all and (min-width:$breakpoint-desktop) {
+            margin: 10rem 32rem 0rem 32rem;
+        }
+
+        &_item {
+            text-decoration: none;
+            color: white;
+        }
+
+    }
+}
+
+
+.main--list_item .fa-solid {
+    font-size: 2rem;
+    color: $color__brand1;
+}
+
+.main--list_item .fa-regular {
+    font-size: 2rem;
+    color: $color__brand1;
+}
+

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Awesome Profile Cards</title>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Montserrat:wght@400;600&family=Open+Sans:wght@400;600&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- Icons
+    
+    -->
+		<link rel="stylesheet" href="./assets/css/main.css" />
+		<link rel="icon" href="./assets/images/favicon.png" />
+	</head>
+
+	<body>
+		<header class="header-card">
+		  <a href="index.html">
+		    <img
+		      class="header-card__image"
+		      src="./assets/images/logo-awesome-profile-cards.svg"
+		      alt="Image header"
+		    />
+		  </a>
+		</header>
+
+		<main class="ui_main">
+		    <section class="preview js-preview">
+    		  <section class="preview_container">
+    		    <button
+    		      type="reset"
+    		      class="preview__reset js-btn__reset"
+    		      title="Pulsa el botón para resetear"
+    		    >
+    		      <i class="fa-regular fa-trash-can preview__reset__text"></i> RESET
+    		    </button>
+
+    		    <article class="preview__card">
+    		      <div class="preview__card__text">
+    		        <h2 class="preview__card__name js__preview_name">Nombre Apellido</h2>
+    		        <h3 class="preview__card__job js__preview_job">Front-end developer</h3>
+    		      </div>
+    		      <div class="preview__card__pic js__profile-image"></div>
+    		      <ul class="preview__card__social">
+    		        <li>
+    		          <a
+    		            href=""
+    		            class="preview__card__social__icons js__preview_tel"
+    		            target="“_blank”"
+    		            ><i class="fa-solid fa-mobile-screen-button"></i
+    		          ></a>
+    		        </li>
+    		        <li>
+    		          <a href="" class="preview__card__social__icons js__preview_email"
+    		            ><i class="fa-solid fa-envelope"></i
+    		          ></a>
+    		        </li>
+
+    		        <li>
+    		          <a
+    		            href=""
+    		            class="preview__card__social__icons js__preview_linkedin"
+    		            target="_blank"
+    		          >
+    		            <i class="fa-brands fa-linkedin-in"></i
+    		          ></a>
+    		        </li>
+    		        <li>
+    		          <a
+    		            href=""
+    		            class="preview__card__social__icons js__preview_github"
+    		            target="_blank"
+    		          >
+    		            <i class="fa-brands fa-github-alt"></i>
+    		          </a>
+    		        </li>
+    		      </ul>
+    		    </article>
+    		  </section>
+    		</section>
+
+		    <form action="" class="dropdown">
+    			<fieldset class="dropdown__fieldset">
+    				<legend
+    					class="dropdown__header js-dropdown__design"
+    					title="Despliega la sección diseña"
+    				>
+    					<i class="dropdown__icon fa-solid fa-object-ungroup"></i>
+    					<h2 class="dropdown__title">Diseña</h2>
+    					<i class="dropdown__arrow fa-solid fa-chevron-down js-arrow__design"></i>
+    				</legend>
+    				<div class="js-content__design">
+    					<fieldset class="form__design">
+					    	<h2 class="form__design__subtitle">Colores</h2>
+
+					    	<div class="form__design__options js-btn-palletes">
+					    		<label for="" id="colores" class="form__design__options-1">
+					    			<input
+					    				class="js-btn-pallete1"
+					    				type="radio"
+					    				name="colores"
+					    				id="1"
+					    				checked
+					    			/>
+					    			<div class="form__design__options-1-container">
+					    				<div class="form__design__options-1-container--color1"></div>
+					    				<div class="form__design__options-1-container--color2"></div>
+					    				<div class="form__design__options-1-container--color3"></div>
+					    			</div>
+					    		</label>
+
+					    		<label for="" id="colores" class="form__design__options-2">
+					    			<input class="js-btn-pallete2" type="radio" name="colores" id="2" />
+					    			<div class="form__design__options-2-container">
+					    				<div class="form__design__options-2-container--color1"></div>
+					    				<div class="form__design__options-2-container--color2"></div>
+					    				<div class="form__design__options-2-container--color3"></div>
+					    			</div>
+					    		</label>
+
+					    		<label for="" id="colores" class="form__design__options-3">
+					    			<input class="js-btn-pallete3" type="radio" name="colores" id="3" />
+					    			<div class="form__design__options-3-container">
+					    				<div class="form__design__options-3-container--color1"></div>
+					    				<div class="form__design__options-3-container--color2"></div>
+					    				<div class="form__design__options-3-container--color3"></div>
+					    			</div>
+					    		</label>
+					    	</div>
+					    </fieldset>
+
+    				</div>
+    			</fieldset>
+    			<fieldset class="dropdown__fieldset">
+    				<legend
+    					class="dropdown__header js-dropdown__fill"
+    					title="Despliega la sección rellena"
+    				>
+    					<i class="dropdown__icon fa-regular fa-keyboard"></i>
+    					<h2 class="dropdown__title">Rellena</h2>
+    					<i class="dropdown__arrow fa-solid fa-chevron-down js-arrow__fill"></i>
+    				</legend>
+    				<div class="js-content__fill collapsed">
+    					<fieldset class="section__fill">
+					    	<label class="section__fill--label" for="name">Nombre Completo</label>
+					    	<input
+					    		class="section__fill--input js-name js-input"
+					    		placeholder="Ej: Sally Jill"
+					    		id="name"
+					    		name="name"
+					    		type="text"
+					    		required
+					    	/>
+					    	<span class="js-error-name js-msgerror" aria-live="polite"></span>
+					    	<label class="section__fill--label" for="job">Puesto</label>
+					    	<input
+					    		class="section__fill--input js-job js-input"
+					    		placeholder="Ej: Front-end unicorn"
+					    		id="job"
+					    		name="job"
+					    		type="text"
+					    		required
+					    	/>
+					    	<span class="js-error-job js-msgerror" aria-live="polite"></span>
+					    	<label class="section__fill--label" for="image">Imagen de perfil</label>
+					    	<div class="section__fill--img">
+					    		<label class="section__fill--button" for="photo">Añadir imagen</label>
+					    		<input
+					    			class="form__photoinput js__profile-upload-btn"
+					    			type="file"
+					    			name="photo"
+					    			id="photo"
+					    		/>
+					    		<span class="section__fill--square js__profile-preview"></span>
+					    	</div>
+					    	<label class="section__fill--label" for="email">Email</label>
+					    	<input
+					    		class="section__fill--input js-email js-input"
+					    		placeholder="Ej: sally-hill@gmail.com"
+					    		id="email"
+					    		name="email"
+					    		type="email"
+					    		pattern="/^.+@.+$/"
+					    		required
+					    	/>
+					    	<span class="error js-msgerror" aria-live="polite"></span>
+					    	<label class="section__fill--label" for="phone">Teléfono</label>
+					    	<input
+					    		class="section__fill--input js-tel js-input"
+					    		placeholder="Ej: 555-55-55-55"
+					    		id="phone"
+					    		name="phone"
+					    		type="tel"
+					    		required
+					    	/>
+					    	<span class="error js-error-tel js-msgerror" aria-live="polite"></span>
+
+					    	<label class="section__fill--label" for="linkedin">Linkedin</label>
+					    	<input
+					    		class="section__fill--input js-linkedin js-input"
+					    		placeholder="Ej: linkedin.com/in/sally.hill"
+					    		id="linkedin"
+					    		name="linkedin"
+					    		type="text"
+					    		required
+					    	/>
+					    	<span class="js-error-linkedin js-msgerror" aria-live="polite"></span>
+					    	<label class="section__fill--label" for="github">Github</label>
+					    	<input
+					    		class="section__fill--input js-github js-input"
+					    		placeholder="Ej: sally-hill"
+					    		id="github"
+					    		name="github"
+					    		type="text"
+					    		required
+					    	/>
+					    	<span class="js-error-github js-msgerror" aria-live="polite"></span>
+					    </fieldset>
+
+    				</div>
+    			</fieldset>
+    			<fieldset class="dropdown__fieldset">
+    				<legend
+    					class="dropdown__header js-dropdown__share"
+    					title="Despliega la sección comparte"
+    				>
+    					<i class="dropdown__icon fa-solid fa-share-nodes"></i>
+    					<h2 class="dropdown__title">Comparte</h2>
+    					<i class="dropdown__arrow fa-solid fa-chevron-down js-arrow__share"></i>
+    				</legend>
+    				<div class="js-content__share collapsed">
+    					<script
+					      src="https://kit.fontawesome.com/fdfeecc597.js"
+					      crossorigin="anonymous"
+					    ></script>
+
+					    <div class="form_share__container">
+					      <button class="form_share__container--btn js-shareBtn">
+					        <span><i class="fa-regular fa-address-card icono"></i></span>Crear tarjeta
+					      </button>
+					      </div>
+					        </br>
+					      <div class="js-msgShare"  target="_blank"></div>
+					    </div>
+
+    				</div>
+    			</fieldset>
+
+
+    			<!-- <a class="twitter-share-button" href="https://twitter.com/intent/tweet">
+    				Compartir en Twitter</a> -->
+    			
+    		</form>
+
+		</main>
+		<footer class="footer-ui">
+		    <div class="container-footer">
+		        <p class="footer__copy">Awesome profile-cards @2023</p>
+		        <img class="footer__image" src="./assets/images/logo-adalab.png" alt="Image footer">
+		    </div>
+		</footer>
+		<script src="./assets/js/main.js"></script>
+	</body>
+</html>

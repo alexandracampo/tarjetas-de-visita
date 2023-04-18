@@ -1,0 +1,75 @@
+<fieldset class="section__fill">
+	<label class="section__fill--label" for="name">Nombre Completo</label>
+	<input
+		class="section__fill--input js-name js-input"
+		placeholder="Ej: Sally Jill"
+		id="name"
+		name="name"
+		type="text"
+		required
+	/>
+	<span class="js-error-name js-msgerror" aria-live="polite"></span>
+	<label class="section__fill--label" for="job">Puesto</label>
+	<input
+		class="section__fill--input js-job js-input"
+		placeholder="Ej: Front-end unicorn"
+		id="job"
+		name="job"
+		type="text"
+		required
+	/>
+	<span class="js-error-job js-msgerror" aria-live="polite"></span>
+	<label class="section__fill--label" for="image">Imagen de perfil</label>
+	<div class="section__fill--img">
+		<label class="section__fill--button" for="photo">Añadir imagen</label>
+		<input
+			class="form__photoinput js__profile-upload-btn"
+			type="file"
+			name="photo"
+			id="photo"
+		/>
+		<span class="section__fill--square js__profile-preview"></span>
+	</div>
+	<label class="section__fill--label" for="email">Email</label>
+	<input
+		class="section__fill--input js-email js-input"
+		placeholder="Ej: sally-hill@gmail.com"
+		id="email"
+		name="email"
+		type="email"
+		pattern="/^.+@.+$/"
+		required
+	/>
+	<span class="error js-msgerror" aria-live="polite"></span>
+	<label class="section__fill--label" for="phone">Teléfono</label>
+	<input
+		class="section__fill--input js-tel js-input"
+		placeholder="Ej: 555-55-55-55"
+		id="phone"
+		name="phone"
+		type="tel"
+		required
+	/>
+	<span class="error js-error-tel js-msgerror" aria-live="polite"></span>
+
+	<label class="section__fill--label" for="linkedin">Linkedin</label>
+	<input
+		class="section__fill--input js-linkedin js-input"
+		placeholder="Ej: linkedin.com/in/sally.hill"
+		id="linkedin"
+		name="linkedin"
+		type="text"
+		required
+	/>
+	<span class="js-error-linkedin js-msgerror" aria-live="polite"></span>
+	<label class="section__fill--label" for="github">Github</label>
+	<input
+		class="section__fill--input js-github js-input"
+		placeholder="Ej: sally-hill"
+		id="github"
+		name="github"
+		type="text"
+		required
+	/>
+	<span class="js-error-github js-msgerror" aria-live="polite"></span>
+</fieldset>

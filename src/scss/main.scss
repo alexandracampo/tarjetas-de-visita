@@ -1,0 +1,21 @@
+@import 'core/variables';
+@import 'core/reset';
+@import 'core/mixins';
+@import 'core/animations';
+@import 'layout/header';
+@import 'layout/main-landing';
+@import 'layout/footer';
+@import 'pages/section-form-design';
+/**@import 'pages/index';*/
+@import 'pages/section-preview';
+@import 'pages/section-form';
+@import 'pages/section-form-design';
+@import 'pages/section-form-fill';
+@import 'pages/section-form-share';
+@import 'layout/footer';
+@import 'pages/footer-UI';
+
+body {
+    display: flex;
+    flex-direction: column;
+}

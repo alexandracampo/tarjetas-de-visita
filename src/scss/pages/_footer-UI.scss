@@ -1,0 +1,45 @@
+.footer-ui {
+   height: 100vh;
+   position: relative;
+   display: flex;
+   flex-direction: row;
+   align-items: flex-end;
+    
+    .container-footer {
+        background-color: #ffffff;
+        border: solid 1px $color__dividers;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 100vw;
+
+    
+    @media all and (min-width: $breakpoint-tablet) {
+        flex-direction: row;
+        justify-content:space-between;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+        position: absolute;
+        bottom: 0;
+        width: 100vw;
+    }
+
+
+    &__copy {
+        font-family: $font__text, sans-serif;
+        color: #6b6b6b;
+        line-height: 1.43;
+        font-size: 14px;
+        opacity: 0.5;
+    }
+
+
+    &__image {
+        width: 103px;
+        height: 40px;
+    }
+}
+}
